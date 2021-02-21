@@ -11,10 +11,21 @@ function myFunction() {
 }
 
 /* Show subnav */
-function mouseOver() {
-  document.getElementById("subnav").classList.add("header__navbar-item-subnav-show");
+
+/* Main */
+function mouseOverMain() {
+  document.querySelector(".header__navbar-main").classList.add("header__navbar-item-subnav-show");
 }
 
-function mouseOut() {
-  document.getElementById("subnav").classList.remove("header__navbar-item-subnav-show");
+function mouseOutMain() {
+  document.querySelector(".header__navbar-main").classList.remove("header__navbar-item-subnav-show");
+}
+
+/* Shop */
+function mouseOverShop() {
+  document.querySelector(".header__navbar-shop").classList.add("header__navbar-item-subnav-show");
+}
+
+function mouseOutShop() {
+  document.querySelector(".header__navbar-shop").classList.remove("header__navbar-item-subnav-show");
 }

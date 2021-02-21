@@ -81,13 +81,13 @@
                             </a>
                         </li>
     
-                        <li  onmouseover="mouseOver()" onmouseout="mouseOut()" class="header__navbar-item">
+                        <li  onmouseover="mouseOverMain()" onmouseout="mouseOutMain()" class="header__navbar-item">
                             <a href="" class="header__navbar-item-link header__navbar-item-link-underline">
                                 Main
                             </a>
                         </li>
 
-                        <li class="header__navbar-item">
+                        <li onmouseover="mouseOverShop()" onmouseout="mouseOutShop()"  class="header__navbar-item">
                             <a href="" class="header__navbar-item-link header__navbar-item-link-underline">
                                 Shop
                             </a>
@@ -149,7 +149,8 @@
 
                 <!-- Sub nav -->
 
-                <div id="subnav" onmouseover="mouseOver()" onmouseout="mouseOut()" class="header__navbar-item-subnav">
+                <!-- Main Subnav -->
+                <div onmouseover="mouseOverMain()" onmouseout="mouseOutMain()" class="header__navbar-item-subnav header__navbar-main">
                     <div class="grid__row-header">
                         <div class="grid__column-5">
                             <div class="header__subnav-home">
@@ -309,7 +310,662 @@
 
                     </div>
                 </div>
+                <!-- End Main Subnav -->
 
+                <!-- Shop Subnav -->
+                <div onmouseover="mouseOverShop()" onmouseout="mouseOutShop()" class="header__navbar-item-subnav header__navbar-shop">
+                    <div class="grid__row-header">
+                        <div class="grid__column-5">
+                            <div class="header__subnav-home">
+                                <h3 class="subnav-category">CATALOG</h3>
+                                <ul class="subnav-category-list">
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Style 1
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Style 2
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link ">
+                                            Style 3
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Style 4
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <h3 class="subnav-category">CATALOG</h3>
+
+                                <ul class="subnav-category-list">
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Top
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Sidebar
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link ">
+                                            Slide Out
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-5">
+                            <div class="header__subnav-home">
+                                <h3 class="subnav-category">CATALOG OPTIONS</h3>
+                                <ul class="subnav-category-list">
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Darker Background
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Width – Regular
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link ">
+                                            Animation – Zoom Only
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Load More – Scroll
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                                <h3 class="subnav-category">SHOP PAGES</h3>
+
+                                <ul class="subnav-category-list">
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            My account – 1 Col
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Wishlist
+                                        </a>
+                                    </li>
+                                
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-5">
+                            <div class="header__subnav-home">
+                                <h3 class="subnav-category">CART</h3>
+                                <ul class="subnav-category-list">
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Shopping Cart
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <h3 class="subnav-category">MINICART</h3>
+
+                                <ul class="subnav-category-list">
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Top
+                                        </a>
+                                    </li>
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Side
+                                        </a>
+                                    </li>
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Dark
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-5">
+                            <div class="header__subnav-home">
+                                <h3 class="subnav-category">CHECKOUT</h3>
+                                <ul class="subnav-category-list">
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Modern
+                                        </a>
+                                    </li>
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Multi Step
+                                        </a>
+                                    </li>
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Classic
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- End Main Subnav -->
+
+                <!-- Main Subnav -->
+                <div onmouseover="mouseOver()" onmouseout="mouseOut()" class="header__navbar-item-subnav header__navbar-main">
+                    <div class="grid__row-header">
+                        <div class="grid__column-5">
+                            <div class="header__subnav-home">
+                                <h3 class="subnav-category">HOME STYLE</h3>
+                                <ul class="subnav-category-list">
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            V1 - Classic
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            V2 - Full Screen Slider
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link ">
+                                            V3 - New Season
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            V4 - Product Landing
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            V5 - Featured Video
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-5">
+                            <div class="header__subnav-home">
+                                <h3 class="subnav-category">GLOBAL OPTIONS</h3>
+                                <ul class="subnav-category-list">
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Page Load Transition
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Modal Popup
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link ">
+                                            Campaign Bar
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Top Bar – Disabled
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header – Regular Width
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Mobile/Full Menu – Dark
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-5">
+                            <div class="header__subnav-home">
+                                <h3 class="subnav-category">HEADER LAYOUTS</h3>
+                                <ul class="subnav-category-list">
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v1
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v2
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v3
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v4
+                                        </a>
+                                    </li> 
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v5
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v6
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v7
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v8
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v9
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-5">
+                            <div class="header__subnav-home">
+                                <h3 class="subnav-category">OTHER DEMOS</h3>
+                                
+                                <img class="subnav-category-img" src="./assets/img/subnav-img.jpg" alt="">
+                                <ul class="subnav-category-list">
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Decoration
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- End Main Subnav -->
+
+                <!-- Main Subnav -->
+                <div onmouseover="mouseOver()" onmouseout="mouseOut()" class="header__navbar-item-subnav header__navbar-main">
+                    <div class="grid__row-header">
+                        <div class="grid__column-5">
+                            <div class="header__subnav-home">
+                                <h3 class="subnav-category">HOME STYLE</h3>
+                                <ul class="subnav-category-list">
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            V1 - Classic
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            V2 - Full Screen Slider
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link ">
+                                            V3 - New Season
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            V4 - Product Landing
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            V5 - Featured Video
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-5">
+                            <div class="header__subnav-home">
+                                <h3 class="subnav-category">GLOBAL OPTIONS</h3>
+                                <ul class="subnav-category-list">
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Page Load Transition
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Modal Popup
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link ">
+                                            Campaign Bar
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Top Bar – Disabled
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header – Regular Width
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Mobile/Full Menu – Dark
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-5">
+                            <div class="header__subnav-home">
+                                <h3 class="subnav-category">HEADER LAYOUTS</h3>
+                                <ul class="subnav-category-list">
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v1
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v2
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v3
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v4
+                                        </a>
+                                    </li> 
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v5
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v6
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v7
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v8
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v9
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-5">
+                            <div class="header__subnav-home">
+                                <h3 class="subnav-category">OTHER DEMOS</h3>
+                                
+                                <img class="subnav-category-img" src="./assets/img/subnav-img.jpg" alt="">
+                                <ul class="subnav-category-list">
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Decoration
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- End Main Subnav -->
+
+                <!-- Main Subnav -->
+                <div onmouseover="mouseOver()" onmouseout="mouseOut()" class="header__navbar-item-subnav header__navbar-main">
+                    <div class="grid__row-header">
+                        <div class="grid__column-5">
+                            <div class="header__subnav-home">
+                                <h3 class="subnav-category">HOME STYLE</h3>
+                                <ul class="subnav-category-list">
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            V1 - Classic
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            V2 - Full Screen Slider
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link ">
+                                            V3 - New Season
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            V4 - Product Landing
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            V5 - Featured Video
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-5">
+                            <div class="header__subnav-home">
+                                <h3 class="subnav-category">GLOBAL OPTIONS</h3>
+                                <ul class="subnav-category-list">
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Page Load Transition
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Modal Popup
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link ">
+                                            Campaign Bar
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Top Bar – Disabled
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header – Regular Width
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Mobile/Full Menu – Dark
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-5">
+                            <div class="header__subnav-home">
+                                <h3 class="subnav-category">HEADER LAYOUTS</h3>
+                                <ul class="subnav-category-list">
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v1
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v2
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v3
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v4
+                                        </a>
+                                    </li> 
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v5
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v6
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v7
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v8
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v9
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-5">
+                            <div class="header__subnav-home">
+                                <h3 class="subnav-category">OTHER DEMOS</h3>
+                                
+                                <img class="subnav-category-img" src="./assets/img/subnav-img.jpg" alt="">
+                                <ul class="subnav-category-list">
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Decoration
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- End Main Subnav -->
             </div>
 
             <div class="header__container">
