@@ -33,3 +33,16 @@ html {
     margin-left: -5px;
     margin-right: -5px;
 }
+
+.grid__row-header {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -27px;
+    margin-right: -27px;
+}
+
+.grid__column-5 {
+    padding-left: 27px;
+    padding-right: 27px;
+    width: 20%;
+}

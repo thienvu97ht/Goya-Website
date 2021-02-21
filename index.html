@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <script src="./assets/js.js"></script>
 </head>
 <body>
     <div class="app">
@@ -71,82 +72,248 @@
 
             </div>
 
-            <div class="header__container">
-                <div class="header__navbar">
-                    <div class="header__navbar-left">
-                        <ul class="header__navbar-list">
-                            <li class="header__navbar-item">
-                                <a href="" class="header__navbar-item-link">
-                                    <i class="header__navbar-icon ti-menu"></i>
-                                </a>
-                            </li>
-        
-                            <li class="header__navbar-item">
-                                <a href="" class="header__navbar-item-link">
-                                    Main
-                                </a>
-                            </li>
+            <div id="header__navbar-scroll" class="header__navbar">
+                <div class="header__navbar-left">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon ti-menu"></i>
+                            </a>
+                        </li>
     
-                            <li class="header__navbar-item">
-                                <a href="" class="header__navbar-item-link">
-                                    Shop
-                                </a>
-                            </li>
-    
-                            <li class="header__navbar-item">
-                                <a href="" class="header__navbar-item-link">
-                                    Product
-                                </a>
-                            </li>
-    
-                            <li class="header__navbar-item">
-                                <a href="" class="header__navbar-item-link">
-                                    Pages
-                                </a>
-                            </li>
-    
-                            <li class="header__navbar-item">
-                                <a href="" class="header__navbar-item-link">
-                                    Journal
-                                </a>
-                            </li>
-    
-                        </ul>
-                    </div>
-                    
-                    <div class="header__navbar-center">
-                        <img src="https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2019/07/logo-light.png" class="header__navbar-brand-logo" alt="">
-                    </div>
-                    
-                    <div class="header__navbar-right">
-                        <ul class="header__navbar-list">
+                        <li  onmouseover="mouseOver()" onmouseout="mouseOut()" class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link header__navbar-item-link-underline">
+                                Main
+                            </a>
+                        </li>
 
-                            <li class="header__navbar-item">
-                                <a href="" class="header__navbar-item-link">
-                                    Login
-                                </a>
-                            </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link header__navbar-item-link-underline">
+                                Shop
+                            </a>
+                        </li>
+
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link header__navbar-item-link-underline">
+                                Product
+                            </a>
+                        </li>
+
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link header__navbar-item-link-underline">
+                                Pages
+                            </a>
+                        </li>
+
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link header__navbar-item-link-underline">
+                                Journal
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                
+                <div class="header__navbar-center">
+                    <img src="https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2019/07/logo-light.png" class="header__navbar-brand-logo" alt="">
+                </div>
+                
+                <div class="header__navbar-right">
+                    <ul class="header__navbar-list">
+
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link header__navbar-item-link-underline">
+                                Login
+                            </a>
+                        </li>
+
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon ti-search"></i>
+                            </a>
+                        </li>
     
-                            <li class="header__navbar-item">
-                                <a href="" class="header__navbar-item-link">
-                                    <i class="header__navbar-icon ti-search"></i>
-                                </a>
-                            </li>
-        
-                            <li class="header__navbar-item">
-                                <a href="" class="header__navbar-item-link">
-                                    <i class="header__navbar-icon ti-heart"></i>
-                                </a>
-                            </li>
-    
-                            <li class="header__navbar-item">
-                                <a href="" class="header__navbar-item-link">
-                                    <i class="header__navbar-icon ti-bag"></i>
-                                </a>
-                            </li>
-                        </ul>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon ti-heart"></i>
+                            </a>
+                        </li>
+
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon ti-bag"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Sub nav -->
+
+                <div id="subnav" onmouseover="mouseOver()" onmouseout="mouseOut()" class="header__navbar-item-subnav">
+                    <div class="grid__row-header">
+                        <div class="grid__column-5">
+                            <div class="header__subnav-home">
+                                <h3 class="subnav-category">HOME STYLE</h3>
+                                <ul class="subnav-category-list">
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            V1 - Classic
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            V2 - Full Screen Slider
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link ">
+                                            V3 - New Season
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            V4 - Product Landing
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            V5 - Featured Video
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-5">
+                            <div class="header__subnav-home">
+                                <h3 class="subnav-category">GLOBAL OPTIONS</h3>
+                                <ul class="subnav-category-list">
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Page Load Transition
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Modal Popup
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link ">
+                                            Campaign Bar
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Top Bar – Disabled
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header – Regular Width
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Mobile/Full Menu – Dark
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-5">
+                            <div class="header__subnav-home">
+                                <h3 class="subnav-category">HEADER LAYOUTS</h3>
+                                <ul class="subnav-category-list">
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v1
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v2
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v3
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v4
+                                        </a>
+                                    </li> 
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v5
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v6
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v7
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v8
+                                        </a>
+                                    </li>
+
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Header v9
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-5">
+                            <div class="header__subnav-home">
+                                <h3 class="subnav-category">OTHER DEMOS</h3>
+                                
+                                <img class="subnav-category-img" src="./assets/img/subnav-img.jpg" alt="">
+                                <ul class="subnav-category-list">
+                                    <li class="subnav-category-item">
+                                        <a href="" class="subnav-category-item-link">
+                                            Decoration
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
+
+            </div>
+
+            <div class="header__container">
+                
 
                 <div class="header__slider">
                 </div>
@@ -161,6 +328,6 @@
         <div class="footer">
 
         </div>
-    </div>
+    </div> 
 </body>
 </html>
