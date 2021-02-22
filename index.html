@@ -71,14 +71,17 @@
                 </ul>
 
             </div>
+            <input type="checkbox" id="header__menu-input" class="nav-input">
+
+            <label for="header__menu-input"></label>
 
             <div id="header__navbar-scroll" class="header__navbar">
                 <div class="header__navbar-left">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link">
+                            <label for="header__menu-input" class="header__navbar-item-link">
                                 <i class="header__navbar-icon ti-menu"></i>
-                            </a>
+                            </label>
                         </li>
     
                         <li  onmouseover="mouseOverMain()" onmouseout="mouseOutMain()" class="header__navbar-item">
@@ -848,9 +851,168 @@
                 <!-- End Journal Subnav -->
             </div>
 
+            <div class="header__menu-overlay">
+                <div class="grid">
+                    <label for="header__menu-input" class="header__menu--close-link">
+                        <i class="header__menu--close-icon ti-close"></i>
+                    </label>
+                    <div class="grid__row-menu">
+                        <div class="grid__column-menu-left">
+                            <ul class="header__menu--list">
+                                <li class="header__menu--list-item">
+                                    <a href="" class="header__menu--list-item-link">
+                                        MAIN
+                                        <i class="header__menu--list-icon ti-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li class="header__menu--list-item">
+                                    <a href="" class="header__menu--list-item-link">
+                                        SHOP
+                                        <i class="header__menu--list-icon ti-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li class="header__menu--list-item">
+                                    <a href="" class="header__menu--list-item-link">
+                                        PRODUCT
+                                        <i class="header__menu--list-icon ti-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li class="header__menu--list-item">
+                                    <a href="" class="header__menu--list-item-link">
+                                        PAGES
+                                        <i class="header__menu--list-icon ti-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li class="header__menu--list-item">
+                                    <a href="" class="header__menu--list-item-link">
+                                        JOURNAL
+                                        <i class="header__menu--list-icon ti-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="grid__column-menu-right">
+                            <h3 class="grid__column-menu-right-category">CATALOG</h3>
+                            <ul class="grid__column-menu-right-list">
+                                <li class="grid__column-menu-right-item">
+                                    <a href="" class="grid__column-menu-right-link">
+                                        Style 1
+                                    </a>
+                                </li>
+                                <li class="grid__column-menu-right-item">
+                                    <a href="" class="grid__column-menu-right-link">
+                                        Style 2
+                                    </a>
+                                </li>
+                                <li class="grid__column-menu-right-item">
+                                    <a href="" class="grid__column-menu-right-link">
+                                        Style 3
+                                    </a>
+                                </li>
+                                <li class="grid__column-menu-right-item">
+                                    <a href="" class="grid__column-menu-right-link">
+                                        Style 4
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class="grid__column-menu-right-category">FILTERS</h3>
+
+                            <ul class="grid__column-menu-right-list">
+                                <li class="grid__column-menu-right-item">
+                                    <a href="" class="grid__column-menu-right-link">
+                                        Top
+                                    </a>
+                                </li>
+                                <li class="grid__column-menu-right-item">
+                                    <a href="" class="grid__column-menu-right-link">
+                                        Sidebar
+                                    </a>
+                                </li>
+                                <li class="grid__column-menu-right-item">
+                                    <a href="" class="grid__column-menu-right-link">
+                                        Slide Out
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="grid__column-menu-right" >
+                            <h3 class="grid__column-menu-right-category">CATALOG OPTIONS</h3>
+                            <ul class="grid__column-menu-right-list">
+                                <li class="grid__column-menu-right-item">
+                                    <a href="" class="grid__column-menu-right-link">
+                                        Darker Background
+                                    </a>
+                                </li>
+                                <li class="grid__column-menu-right-item">
+                                    <a href="" class="grid__column-menu-right-link">
+                                        Width – Regular
+                                    </a>
+                                </li>
+                                <li class="grid__column-menu-right-item">
+                                    <a href="" class="grid__column-menu-right-link">
+                                        Animation – Zoom Only
+                                    </a>
+                                </li>
+                                <li class="grid__column-menu-right-item">
+                                    <a href="" class="grid__column-menu-right-link">
+                                        Load More – Scroll
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class="grid__column-menu-right-category">SHOP PAGES</h3>
+
+                            <ul class="grid__column-menu-right-list">
+                                <li class="grid__column-menu-right-item">
+                                    <a href="" class="grid__column-menu-right-link">
+                                        My account – 1 Col
+                                    </a>
+                                </li>
+                                <li class="grid__column-menu-right-item">
+                                    <a href="" class="grid__column-menu-right-link">
+                                        Wishlist
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="grid__column-menu-right">
+                            <h3 class="grid__column-menu-right-category">CART</h3>
+                            <ul class="grid__column-menu-right-list">
+                                <li class="grid__column-menu-right-item">
+                                    <a href="" class="grid__column-menu-right-link">
+                                        Shopping Cart
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class="grid__column-menu-right-category">MINICART</h3>
+
+                            <ul class="grid__column-menu-right-list">
+                                <li class="grid__column-menu-right-item">
+                                    <a href="" class="grid__column-menu-right-link">
+                                        Top
+                                    </a>
+                                </li>
+                                <li class="grid__column-menu-right-item">
+                                    <a href="" class="grid__column-menu-right-link">
+                                        Side
+                                    </a>
+                                </li>
+                                <li class="grid__column-menu-right-item">
+                                    <a href="" class="grid__column-menu-right-link">
+                                        Dark
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="header__container">
                 
-
                 <div class="header__slider">
                 </div>
             </div>

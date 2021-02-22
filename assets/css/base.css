@@ -46,3 +46,24 @@ html {
     padding-right: 27px;
     width: 20%;
 }
+
+/* Menu */
+
+.grid__row-menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.grid__column-menu-left {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 25%;
+}
+
+.grid__column-menu-right {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 25%;
+}
