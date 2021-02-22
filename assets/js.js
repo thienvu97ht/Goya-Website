@@ -29,3 +29,30 @@ function mouseOverShop() {
 function mouseOutShop() {
   document.querySelector(".header__navbar-shop").classList.remove("header__navbar-item-subnav-show");
 }
+
+/* Product */
+function mouseOverProduct() {
+  document.querySelector(".header__navbar-product").classList.add("header__navbar-item-subnav-show");
+}
+
+function mouseOutProduct() {
+  document.querySelector(".header__navbar-product").classList.remove("header__navbar-item-subnav-show");
+}
+
+/* Pages */
+function mouseOverPages() {
+  document.querySelector(".header__navbar-pages").classList.add("header__navbar-item-subnav-show");
+}
+
+function mouseOutPages() {
+  document.querySelector(".header__navbar-pages").classList.remove("header__navbar-item-subnav-show");
+}
+
+/* Journal */
+function mouseOverJournal() {
+  document.querySelector(".header__navbar-journal").classList.add("header__navbar-item-subnav-show");
+}
+
+function mouseOutJournal() {
+  document.querySelector(".header__navbar-journal").classList.remove("header__navbar-item-subnav-show");
+}

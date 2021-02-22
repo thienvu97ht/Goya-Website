@@ -208,8 +208,9 @@
     left: 0;
     right: 0;
     background-color: #fff;
-    box-shadow: -2px 2px 45px -20px rgba(0, 0 ,0, 0.3);
-    padding: 60px 64px;
+    border-top: 1px solid #ccc;
+    box-shadow: 0 5px 5px rgba(158, 157, 157, 0.3);
+    padding: 22px 64px;
     display: none;
 }
 
@@ -218,7 +219,7 @@
 }
 
 .subnav-category {
-    margin-bottom: 28px;
+    padding: 18px 0;
     font-size: 1.5rem;
     font-weight: 400;
     color: #555;
@@ -253,7 +254,7 @@
     content: "";
     display: block;
     height: 2px;
-    left: 50%;
+    left: 0%;
     position: absolute;
     background: #555;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
@@ -262,7 +263,7 @@
 
 .subnav-category-item-link:hover::after {
 	width: 100%; 
-    left: 0; 
+    left: 0%; 
 }
 
 .subnav-category-img {
