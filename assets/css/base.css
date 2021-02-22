@@ -15,6 +15,9 @@ html {
     box-sizing: border-box;
 }
 
+/*  */
+
+
 /* Responsive */
 
 .grid {
@@ -45,6 +48,12 @@ html {
     padding-left: 27px;
     padding-right: 27px;
     width: 20%;
+}
+
+.grid__column-3 {
+    padding-left: 27px;
+    padding-right: 27px;
+    width: 33.333%;
 }
 
 /* Menu */

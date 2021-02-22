@@ -56,3 +56,6 @@ function mouseOverJournal() {
 function mouseOutJournal() {
   document.querySelector(".header__navbar-journal").classList.remove("header__navbar-item-subnav-show");
 }
+
+/*  */
+

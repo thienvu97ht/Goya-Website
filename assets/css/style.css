@@ -81,24 +81,6 @@
     font-size: 1.4rem;
 }
 
-
-/* Header Container */
-
-.header__container {
-    height: 90vh;
-    overflow: hidden;
-}
-
-/* Header Slider */
-
-.header__slider {
-    z-index: -1;
-    margin-top: -50px;
-    padding-top: 50%;
-    background: url("https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2020/02/curly_hair_girl-1.jpg") top center / cover no-repeat;
-    position: relative;
-}
-
 /* Header navbar */
 
 .header__navbar {
@@ -365,4 +347,163 @@
     to {
         opacity: 1;
     }
+}
+
+
+/* Header Container */
+
+.header__container {
+    height: 90vh;
+    overflow: hidden;
+}
+
+/* Header Slider */
+
+.header__slider {
+    z-index: -10;
+    margin-top: -50px;
+    padding-top: 50%;
+    background: url("https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2020/02/curly_hair_girl-1.jpg") top center / cover no-repeat;
+    position: relative;
+}
+
+/* App Container */
+
+
+/* App Container Product */
+
+.app__container-product {
+    border-bottom: 1px solid rgb(226, 226, 226);
+    padding: 50px 0;
+}
+
+.container__product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.mg_top-50 {
+    overflow: hidden;
+}
+
+.container__product-item:hover {
+    transform: scale(1.05);
+}
+.container__product-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: transform 1s ease;
+}
+
+.container__product-item-color {
+    width: 100%;
+    height: 100%;
+    background-color: #c7ab62 ;
+}
+
+.container__product-title-content {
+    position: absolute;
+    top: 120px;
+    justify-content: center;
+    color: #fff ;
+    text-align: center;
+    line-height: 30px;
+    font-size: 2.7rem;
+    font-weight: 400;
+}
+
+.container__product-content-button {
+    color: #333;
+    top: 250px;
+    position: absolute;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.6rem;
+    display: block;
+    width: 150px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.container__product-content-button:hover {
+    opacity: 0.7;
+}
+
+.container__product-content {
+    top: 180px;
+    font-size: 1.4rem;
+    position: absolute;
+    color: #ece2c9;
+}
+
+/* App Container Selling */
+
+.app__container-selling {
+    padding: 60px 0;
+}
+
+.app__container-selling-title {
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 36px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.app__container-selling-introduce {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 36px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 26px;
+    color: #9c9c9c;
+}
+
+.container__selling-item1, 
+.container__selling-item2, 
+.container__selling-item3 {
+    width: 100%;
+    height: 410px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    transform: translateY(0px);
+    transition: transform 1s ease;
+}
+
+.container__selling-img1 {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+}
+
+.container__selling-img2 {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    opacity: 0;
+}
+
+
+.container__selling-item1:hover .container__selling-img2, 
+.container__selling-item2:hover .container__selling-img2, 
+.container__selling-item3:hover .container__selling-img2 {
+    width: 100%;
+    height: 100%;
+    transform: translateY(-5px);
+    opacity: 1;
+    animation: fadeIn linear 0.4s;
+    transition: transform linear 0.5s;
 }
