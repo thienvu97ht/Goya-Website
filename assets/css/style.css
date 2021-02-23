@@ -214,6 +214,7 @@
 .subnav-category-list {
     list-style: none;
     padding: 0;
+    margin: 20px 0;
 }
 
 .grid__column-menu-right-item,
@@ -228,6 +229,10 @@
     letter-spacing: 0.15em;
     display: inline-block;
     position: relative;
+}
+
+.subnav-category-item-link + .subnav-category-item-link {
+    padding-bottom: 10px;
 }
 
 .subnav-category-item-link + .subnav-category-item-link {
@@ -274,7 +279,7 @@
 .header__menu--close-link {
     text-decoration: none;
     display: inline-block;
-    margin: 17px 0;
+    margin: 40px 0;
     background-color: #f2f2f2;
     border: 9px solid #f2f2f2;
     border-radius: 50%;
@@ -286,39 +291,50 @@
 }
 
 .header__menu--list {
+    margin: 0;
     list-style: none;
     padding: 0;
 }
 
 .header__menu--list-item {
-    padding: 18px 0;
+    padding-bottom: 18px;
     position: relative;
     line-height: 38px;
 }
 
 .header__menu--list-item:hover .header__menu--list-icon {
-    background-color: #f2f2f2;
+    background-color: rgba(242, 242, 242,1);
     border: 9px solid #f2f2f2;
     border-radius: 50%;
 }
 
+.header__menu--list-block {
+    display: flex;
+}
+
 .header__menu--list-item-link {
     font-size: 1.8rem;
+    position: relative;
     color: #555;
     text-decoration: none;
     letter-spacing: 0.15em;
-    display: flex;
     align-items: center;
 }
 
 .header__menu--list-icon {
-    display: flex;
+    font-size: 1.4rem;
     margin-left: auto;
+    background-color: rgba(242, 242, 242,0);
+    border: 9px solid rgba(242, 242, 242,0);
+    border-radius: 50%;
+    transition: all linear 0.2s;
 }
 
+/* Grid column menu */
+
 .grid__column-menu-right-category {
-    margin: 23px 0;
-    padding: 18px 0;
+    margin: 10px 0 22px 0;
+    padding: 0;
     font-size: 1.6rem;
     font-weight: 400;
     color: #555;
@@ -326,10 +342,33 @@
 }
 
 .grid__column-menu-right-link {
+    margin: 4px 0;
     font-size: 1.5rem;
     color: #555;
     text-decoration: none;
     letter-spacing: 0.05em;
+    display: inline-block;
+    position: relative;
+}
+
+.header__menu--list-item-link::after, 
+.grid__column-menu-right-link::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: -10px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0%;
+    position: absolute;
+    background: #555;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.header__menu--list-item-link:hover::after,
+.grid__column-menu-right-link:hover::after {
+	width: 100%; 
+    left: 0%; 
 }
 
 .nav-input {
