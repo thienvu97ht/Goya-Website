@@ -58,20 +58,111 @@
                 </ul>
 
                 <ul class="header__contact-list">
-                    <li class="header__conatct-item xxxx">
+                    <li class="header__conatct-item header__conatct-language">
                         <a href="" class="header__contact-item-language ">
                             English
                             <i class="header__contact-icon-arrow ti-angle-down"></i>
                         </a>
                         <ul class="header__contact-subnav">
-                            <li><a href="#">Français</a></li>
-                            <li><a href="#">Deutsch</a></li>
+                            <li class="header__contact-subnav-item">
+                                <a href="#" class="header__contact-subnav-item-link">Français</a>
+                            </li>
+                            <li class="header__contact-subnav-item">
+                                <a href="#" class="header__contact-subnav-item-link">Deutsch</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
 
             </div>
             <input type="checkbox" id="header__menu-input" class="nav-input">
+            <input type="checkbox" id="header__menu-bag" class="cart-input">
+
+            <label for="header__menu-bag"></label>
+            <label for="header__menu-bag" class="header__menu-bag-overlay">
+            </label>
+
+            <div class="header__menu-nav-bag">
+                <div class="nav__bang-header">
+                    <span class="nav__bang-header-cart">Cart 2</span>
+                    <label for="header__menu-bag" class="nav__bag-header-link">
+                        <i class="nav__bang-header-icon ti-close"></i>
+                    </label>
+                </div>
+            
+                <div class="shopping__cart-container">
+                    <ul class="nav__bag-list">
+                        <li class="nav__bag-list-item">
+                            <div class="nav__bag-list-item-left">
+                                <img src="https://goya.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2019/05/woman-abstract-a1-150x150.jpg" alt="">
+                            </div>
+                            <div class="nav__bag-list-item-right">
+                                <div class="nav__bag--item-name">
+                                    <a href="" class="nav__bag--item-name-link">
+                                        Abstract Print Cotton Blouse
+                                    </a>
+                                    <i class="ti-close nav__bag--item-name-close"></i>
+                                </div>
+                                <div class="nav__bag--item-pricing">
+                                    <div class="nav__bag--item-quantity">
+                                        <a href="#" class="minus">
+                                            <i class=" ti-minus"></i>
+                                        </a>
+                                        
+                                        <input type="number" class="nav__bag--item-quantity-number" maxlength="2" value="1" placeholder="0">
+                                        <a href="#" class="plus">
+                                            <i class=" ti-plus"></i>
+                                        </a>
+                                    </div>
+    
+                                    <p class="nav__bag--item-price">
+                                       $39.00
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <li class="nav__bag-list-item">
+                            <div class="nav__bag-list-item-left">
+                                <img src="https://goya.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2020/01/woman-microbag-a1-150x150.jpg" alt="">
+                            </div>
+                            <div class="nav__bag-list-item-right">
+                                <div class="nav__bag--item-name">
+                                    <a href="" class="nav__bag--item-name-link">
+                                        Micro Form Bag
+                                    </a>
+                                    <i class="ti-close nav__bag--item-name-close"></i>
+                                </div>
+                                <div class="nav__bag--item-pricing">
+                                    <div class="nav__bag--item-quantity">
+                                        <a href="#" class="minus">
+                                            <i class=" ti-minus"></i>
+                                        </a>
+                                        
+                                        <input type="number" class="nav__bag--item-quantity-number" maxlength="2" value="1" placeholder="0">
+                                        <a href="#" class="plus">
+                                            <i class=" ti-plus"></i>
+                                        </a>
+                                    </div>
+    
+                                    <p class="nav__bag--item-price">
+                                       $98.00
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="nav__bag-cart-panel">
+                        <div class="nav__bag-cart-panel-total">
+                            <p class="nav__bag-total-text">Subtotal:</p>
+                            <p class="nav__bag-total-price">$137.00</p>
+                        </div>
+                        <a href="" class="nav__bag-view-cart">View cart</a>
+                        <a href="" class="nav__bag-check-out">Checkout</a>
+                    </div>
+                </div>
+            </div>
 
             <div id="header__navbar-scroll" class="header__navbar">
                 <div class="header__navbar-left">
@@ -124,7 +215,7 @@
 
                         <li class="header__navbar-item">
                             <a href="" class="header__navbar-item-link header__navbar-item-link-underline">
-                                Login
+                                My Account
                             </a>
                         </li>
 
@@ -141,9 +232,10 @@
                         </li>
 
                         <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link">
+                            <label for="header__menu-bag" href="#" class="header__navbar-item-link">
                                 <i class="header__navbar-icon ti-bag"></i>
-                            </a>
+                            </label>
+                            <span class="header__navbar-item-notice">2</span>
                         </li>
                     </ul>
                 </div>
