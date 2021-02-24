@@ -913,7 +913,7 @@
 
 .footer__info-form-email-input::placeholder {
    font-size: 1.6rem;
-   color: rgb(59, 59, 59);
+   color: rgb(109, 108, 108);
 }
 
 .footer__info-form-sumbit {
@@ -926,4 +926,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Footer policy */
+
+.footer__policy-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.footer__policy-left {
+
+}
+
+.footer__policy-left-link {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: rgb(59, 59, 59);
+    margin-right: 20px;
+}
+
+.footer__policy-right {
+
+}
+
+.footer__policy-right-copyright {
+    font-size: 1.6rem;
+    color: rgb(59, 59, 59);
+    margin: 0;
 }
