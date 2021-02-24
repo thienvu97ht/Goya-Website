@@ -430,6 +430,7 @@
 
 .header__navbar-item-subnav-show {
     display: block;
+    animation: fadeIn linear 0.3s;
 }
 
 .subnav-category {
