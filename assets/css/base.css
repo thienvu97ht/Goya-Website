@@ -1,7 +1,7 @@
 :root {
     --white-color: #fff;
     --black-color: #000;
-    --text-color: #222;
+    --text-color: #767976;
 }
 
 * {
@@ -65,6 +65,7 @@ html {
     margin-right: -16px;
 }
 
+.grid__column-25,
 .grid__column_trending,
 .grid__column-menu-right,
 .grid__column-menu-left {
@@ -72,3 +73,34 @@ html {
     padding-right: 16px;
     width: 25%;
 }
+
+/* Product */
+
+.product__new {
+    position: absolute;
+    background-color: #fff;
+    font-size: 1.3rem;
+    width: 50px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    left: 20px;
+    color: #666;
+}
+
+.product__sale {
+    position: absolute;
+    background-color: #fff;
+    font-size: 1.3rem;
+    width: 50px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    left: 20px;
+    color: rgb(255, 0, 0);
+}
+
