@@ -1,14 +1,29 @@
-/* Scroll change color */
+/* Scroll */
 
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {showProduct()};
 
-function myFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("header__navbar-scroll").classList.add("scroll_change-color");
+function showProduct() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    document.getElementById("header__navbar-scroll").classList.add("scroll__change-color");
+    document.querySelector(".app__container-product").classList.add("scroll__show-product");
   } else {
-    document.getElementById("header__navbar-scroll").classList.remove("scroll_change-color");
+    document.getElementById("header__navbar-scroll").classList.remove("scroll__change-color");
   }
+
+  if (document.body.scrollTop > 590 || document.documentElement.scrollTop > 590) {
+    document.querySelector(".app__container-selling").classList.add("scroll__show-product");
+  } 
+
+  if (document.body.scrollTop > 1700 || document.documentElement.scrollTop > 1700) {
+    document.querySelector(".container__trending").classList.add("scroll__show-product");
+  } 
+
+  if (document.body.scrollTop > 2350 || document.documentElement.scrollTop > 2350) {
+    document.querySelector(".container__visit").classList.add("scroll__show-product");
+  } 
 }
+
+
 
 /* Show subnav */
 
