@@ -825,9 +825,105 @@
 
 /* Footer info */
 
+.footer__info {
+    padding: 30px 0;
+    border-bottom: 1px solid rgb(226, 226, 226) ;
+}
+
 .footer__info-title {
     font-size: 1.8rem;
     font-weight: 400;
     color: var(--text-color);
     letter-spacing: 2px;
+    margin: 30px 0;
+}
+
+.footer__info--list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer__info--list-item {
+    margin: 24px 0;
+}
+
+.footer__info--list-item-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #242323;
+    letter-spacing: 1.1px;
+    position: relative;
+}
+
+.footer__info--list-icon {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    padding: 10px 0;
+}
+
+.footer__info--list-icon-item {
+    margin: 0 5px;
+}
+
+.footer__info-link-icon {
+    padding: 0 8px;
+    text-decoration: none;
+}
+
+.footer__info-icon {
+    font-size: 1.6rem;
+    color: #000;
+}
+
+.footer__info--list-item-link::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: -10px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0%;
+    position: absolute;
+    background: #555;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.footer__info--list-item-link:not(p):hover::after {
+	width: 100%; 
+    left: 0%;
+}
+
+.footer__info-form-sign-up {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.footer__info-form-email-input {
+    height: 54px;
+    width: 238px;
+    text-indent: 10px;
+    outline: none;
+    font-size: 1.6rem;
+    border: 2px solid #000;
+}
+
+.footer__info-form-email-input::placeholder {
+   font-size: 1.6rem;
+   color: rgb(59, 59, 59);
+}
+
+.footer__info-form-sumbit {
+    background-color: #000;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+    width: 114px;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
