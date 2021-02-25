@@ -12,7 +12,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .header__contact-list {
@@ -95,7 +95,7 @@
 
 .header__navbar {
     position: fixed;
-    z-index: 0;
+    z-index: 1;
     top: 40px;
     right: 0;
     left: 0;
@@ -615,15 +615,6 @@
     transform: translateX(0%);
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 
 /* Header Container */
 
@@ -809,7 +800,7 @@
     height: 100%;
     transform: translateY(-5px);
     opacity: 1;
-    animation: fadeIn linear 0.3s;
+    animation: opacityIn linear 0.3s;
     transition: all linear 0.3s;
 }
 
@@ -1025,7 +1016,7 @@
 .container__trending-item:hover .container__trending-img2 {
     transform: translateY(-5px);
     opacity: 1;
-    animation: fadeIn linear 0.4s;
+    animation: opacityIn linear 0.4s;
     transition: transform linear 0.5s;
 }
 
@@ -1222,6 +1213,17 @@
 
 
 /* Scroll event */
+
+
+@keyframes opacityIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 @keyframes fadeIn {
     from {
