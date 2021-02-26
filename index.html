@@ -77,10 +77,40 @@
             </div>
             <input type="checkbox" id="header__menu-input" class="nav-input">
             <input type="checkbox" id="header__menu-bag" class="cart-input">
+            <input type="checkbox" id="header__menu-search" class="search-input">
 
-            <label for="header__menu-bag"></label>
+            <label for="header__menu-search"></label>
+
+            <label for="header__menu-search" class="header__menu-bag-overlay">
+            </label>
+
             <label for="header__menu-bag" class="header__menu-bag-overlay">
             </label>
+
+            <div class="header__menu-sreach">
+                <div class="header__menu-sreach-close">
+                    <label for="header__menu-search" href="#" class="header__menu-sreach-close-link">
+                        <i class="nav__bang-sreach-close-icon ti-close"></i>
+                    </label>
+                </div>
+
+                <div class="header__menu-sreach-nav">
+                    <div class="header__menu-sreach-bar-all">
+                        <div class="header__menu-sreach-bar">
+                            <i class="header__menu-sreach-icon ti-search"></i>
+                            <input type="text" class="header__menu-sreach-input" placeholder="Search product...">
+                        </div>
+                        <div class="header__menu-sreach-category">
+                            <select class="header__menu-sreach-category-select" >
+                                <option value="0">All Categories</option>
+                                <option value="1">Men</option>
+                                <option value="2">Speakers</option>
+                                <option value="3">Women</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="header__menu-nav-bag">
                 <div class="nav__bang-header">
@@ -220,9 +250,9 @@
                         </li>
 
                         <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link">
+                            <label for="header__menu-search" href="#" class="header__navbar-item-link">
                                 <i class="header__navbar-icon ti-search"></i>
-                            </a>
+                            </label>
                         </li>
     
                         <li class="header__navbar-item">

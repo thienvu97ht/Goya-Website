@@ -155,6 +155,7 @@
 }
 
 .header__navbar-item-link {
+    cursor: pointer;
     font-size: 1.6rem;
     text-decoration: none;
     color: #4a4a4a;
@@ -162,6 +163,98 @@
 
 .header__navbar-icon {
     font-size: 2rem;
+}
+
+/* Sreach */
+
+.header__menu-sreach {
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+
+.search-input:checked ~ .header__menu-sreach {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all linear 0.3s;
+}
+
+.header__menu-sreach-close {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__menu-sreach-close-link {
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.nav__bang-sreach-close-icon {
+    font-size: 1.6rem;
+    background-color: #f2f2f2;
+    border: 9px solid #f2f2f2;
+    border-radius: 50%;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__menu-sreach-nav {
+    width: 1140px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 0 80px 0;
+}
+
+.header__menu-sreach-bar-all {
+    display: flex;
+    align-items: center;
+    width: 768px;
+    margin: 0 auto;
+    border-bottom: 2px solid rgb(134, 134, 134);
+}
+
+.header__menu-sreach-bar {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+
+.header__menu-sreach-icon {
+    font-size: 1.9rem;
+    color: rgb(194, 194, 194);
+    margin-right: 10px;
+}
+
+.header__menu-sreach-input {
+    outline: none;
+    height: 90px;
+    font-size: 3.3rem;
+    border: none;
+    flex: 1;
+}
+
+.header__menu-sreach-category-select {
+    outline: none;
+    border: none;
+    font-size: 1.6rem;
+    padding: 10px;
+    color: #757575;
+}
+
+.header__menu-sreach-category-select option {
+
 }
 
 /* Cart */
@@ -378,11 +471,13 @@
     line-height: 45px;
 }
 
+.search-input, 
 .cart-input {
     display: none;
 }
 
-.cart-input:checked ~ .header__menu-bag-overlay {
+
+.search-input:checked ~ .header__menu-bag-overlay, .cart-input:checked ~ .header__menu-bag-overlay {
     display: block;
     opacity: 1;
     transition: all linear 0.3s;
@@ -393,6 +488,7 @@
     opacity: 1;
     transition: all linear 0.3s;
 }
+
 /*  */
 
 .header__navbar-brand-logo {
