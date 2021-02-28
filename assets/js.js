@@ -6,8 +6,10 @@ function showProduct() {
   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
     document.getElementById("header__navbar-scroll").classList.add("scroll__change-color");
     document.querySelector(".app__container-product").classList.add("scroll__show-product");
+    document.querySelector(".header-mobile-tablet").classList.add("scroll__change-color-tablet");
   } else {
     document.getElementById("header__navbar-scroll").classList.remove("scroll__change-color");
+    document.querySelector(".header-mobile-tablet").classList.remove("scroll__change-color-tablet");
   }
 
   if (document.body.scrollTop > 590 || document.documentElement.scrollTop > 590) {

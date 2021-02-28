@@ -1,5 +1,5 @@
 .app {
-    height: 1500px;
+    overflow: hidden;
 }
 
 .header__contact {
@@ -264,7 +264,8 @@
     z-index: 3;
     font-size: 1.1rem;
     right: -20px;
-    padding: 1px 5px;
+    width: 18px;
+    height: 18px;
     background-color: #b9a16b;
     border-radius: 50%;
     color: #fff;
@@ -754,6 +755,34 @@
 .header__container-ads-shop-now {
     font-size: 1.9rem;
     color: #888;
+}
+
+/* Header Tablet Mobile */
+
+.header-mobile-tablet {
+    position: fixed;
+    z-index: 9;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 30px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all linear 0.3s;
+}
+
+.header-mobile-tablet__icon-link {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #000;
+
+}
+
+.header-mobile-tablet__logo-img {
+    height: 24px;
 }
 
 /* App Container Base*/
@@ -1336,6 +1365,11 @@
     box-shadow: -2px 2px 45px -20px rgba(0, 0 ,0, 0.3);
     background-color: rgba(255, 255, 255, 1);
     transform: translateY(-40px);
+}
+
+.scroll__change-color-tablet {
+    box-shadow: -2px 2px 45px -20px rgba(0, 0 ,0, 0.3);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .scroll__show-product {

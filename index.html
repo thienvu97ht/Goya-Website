@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
@@ -19,7 +20,7 @@
 <body>
     <div class="app">
         <div class="header">
-            <div class="header__contact">
+            <div class="header__contact hide-on-mobile-tablet">
                 <ul class="header__contact-list">
                     <li class="header__conatct-item">
                         <a href="" class="header__contact-item-link">
@@ -194,7 +195,7 @@
                 </div>
             </div>
 
-            <div id="header__navbar-scroll" class="header__navbar">
+            <div id="header__navbar-scroll" class="header__navbar hide-on-mobile-tablet">
                 <div class="header__navbar-left">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item">
@@ -971,8 +972,21 @@
                 <!-- End Journal Subnav -->
             </div>
 
+            <!-- NavBar Tablet and Mobile -->
+            <div class="header-mobile-tablet">
+                <a href="" class="header-mobile-tablet__icon-link">
+                    <i class="ti-menu"></i>
+                </a>
+                <a href="#" class="header-mobile-tablet__icon-link">
+                    <img src="https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2019/07/logo-light.png" alt="" class="header-mobile-tablet__logo-img">
+                </a>
+                <a href="" class="header-mobile-tablet__icon-link">
+                    <i class="ti-bag"></i>
+                </a>
+            </div>
+
             <div class="header__menu-overlay">
-                <div class="grid">
+                <div class="grid wide">
                     <label for="header__menu-input" class="header__menu--close-link">
                         <i class="header__menu--close-icon ti-close"></i>
                     </label>
@@ -1155,7 +1169,7 @@
 
         <div class="app__container">
             <div class="app__container-product">
-                <div class="grid">
+                <div class="grid wide">
                     <div class="grid__row-menu mg_top-50">
                         <div class="grid__column-3">
                             <div class="container__product-item ">
@@ -1187,7 +1201,7 @@
             </div>
 
             <div class="app__container-selling">
-                <div class="grid">
+                <div class="grid wide">
                     <h4 class="app__container-title">
                         Best Selling
                     </h4>
@@ -1299,7 +1313,7 @@
             </div>
 
             <div class="container__trending">
-                <div class="grid">
+                <div class="grid wide">
                     <h4 class="app__container-title">
                         Trending Outfits
                     </h4>
@@ -1420,7 +1434,7 @@
             </div>
 
             <div class="container__visit">
-                <div class="grid">
+                <div class="grid wide">
                     <h4 class="app__container-title">
                         Visit Us
                     </h4>
@@ -1434,7 +1448,7 @@
 
         <div class="footer">
             <div class="footer__info">
-                <div class="grid">
+                <div class="grid wide">
                     <div class="grid__row-menu">
                         <div class="grid__column-25">
                             <h6 class="footer__info-title">COMPANY</h6>
@@ -1554,7 +1568,7 @@
             </div>
 
             <div class="footer__policy">
-                <div class="grid">
+                <div class="grid wide">
                     <div class="footer__policy-content">
                         <div class="footer__policy-left">
                             <a href="" class="footer__policy-left-link">Privacy Policy</a>
