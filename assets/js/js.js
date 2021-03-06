@@ -74,5 +74,17 @@ function mouseOutJournal() {
   document.querySelector(".header__navbar-journal").classList.remove("header__navbar-item-subnav-show");
 }
 
-/*  */
-
+/* Slide */
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+      margin: 0,
+      loop: true,
+      items: 1,
+      nav: true,
+      autoheight: true,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      autoplayHoverPause: true
+      
+  })  
+});

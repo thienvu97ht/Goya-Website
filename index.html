@@ -8,6 +8,16 @@
 
     <link rel="icon" href="https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2019/07/logo-alt.png" type="image/x-icon" />
 
+    <!-- Slide -->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/js.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/base.css">
@@ -15,7 +25,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
-    <script src="./assets/js.js"></script>
+    
 </head>
 <body>
     <div class="app">
@@ -80,8 +90,6 @@
             <input type="checkbox" id="header__menu-bag" class="cart-input">
             <input type="checkbox" id="header__menu-search" class="search-input">
 
-            <label for="header__menu-search"></label>
-
             <label for="header__menu-search" class="header__menu-bag-overlay">
             </label>
 
@@ -111,6 +119,10 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="menu__mobile-tablet">
+                
             </div>
 
             <div class="header__menu-nav-bag">
@@ -1155,15 +1167,36 @@
                 </div>
             </div>
 
-            <div class="header__container">
-                <img src="https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2020/02/curly_hair_girl-1.jpg" alt="" class="header__slider-img">
-                <div class="header__container-ads">
-                    <span class="header__container-ads-sale">50% OFF</span>
-                    <h1 class="header__container-ads-name-product">New Cocktail <br> Dresses</h1>
-                    <p class="header__container-ads-shop-now">Shop Now</p>
+            <!-- Slide -->
+            <div class="owl-carousel owl-theme header__container">
+                <div class="">
+                    <img src="./assets/img/slide1.jpg" alt="" class="header__slider-img" >
+                    <div class="header__container-ads">
+                        <span class="header__container-ads-sale">Spring/Summer '19</span>
+                        <h1 class="header__container-ads-name-product">The Weekent  <br> Getaway</h1>
+                        <p class="header__container-ads-shop-now">Browse styles</p>
+                    </div>
+                </div>
+                
+                <div class="">
+                    <img src="./assets/img/slide2.jpg" alt="" class="header__slider-img">
+                    <div class="header__container-ads">
+                        <span class="header__container-ads-sale">50% OFF</span>
+                        <h1 class="header__container-ads-name-product">New Cocktail <br> Dresses</h1>
+                        <p class="header__container-ads-shop-now">Shop Now</p>
+                    </div>
+                </div>
+        
+                <div class="">
+                    <img src="./assets/img/slide3.jpg" alt="" class="header__slider-img">
+                    <div class="header__container-ads header__container-ads-left">
+                        <span class="header__container-ads-sale">Summer '19</span>
+                        <h1 class="header__container-ads-name-product">Night Summer <br> Dresses</h1>
+                        <p class="header__container-ads-shop-now">Shop Now</p>
+                    </div>
                 </div>
             </div>
-            
+            <!-- End Slide -->
 
         </div>
 
