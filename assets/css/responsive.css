@@ -27,6 +27,7 @@
         object-fit: cover;
         object-position: 50% 100%;
     }
+
 }
 
 /* Tablet */
@@ -60,6 +61,13 @@
         font-size: 4rem ;
     }
     
+    .owl-prev-two {
+        left: 10%;
+    }
+    
+    .owl-next-two {
+        right: 10%;
+    }
     
 }
 
@@ -124,6 +132,14 @@
     }
 
     .owl-dots {
+        display: none;
+    }
+
+    .owl-prev-two {
+        display: none;
+    }
+    
+    .owl-next-two {
         display: none;
     }
 }
