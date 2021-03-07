@@ -1479,3 +1479,27 @@
 .owl-carousel {
     z-index: 0;
 }
+
+#backtop {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255,255,255,.2);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#backtop:hover {
+    border: 2px solid rgba(0, 0, 0, 1);
+    transition: all linear 0.4s;
+}
+
+.backtop__icon {
+    font-size: 2rem;
+}
