@@ -1,5 +1,6 @@
 .app {
     overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header {
@@ -264,15 +265,117 @@
 
 /* Menu mobile and tablet */
 
-.menu__mobile-tablet {
+.menu__mobile--tablet {
     position: fixed;
     z-index: 4;
-    background-color: #FFF;
+    background-color: #fff;
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0;
+    width: 460px;
+    max-width: 100%;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+
+.menu__mobile--tablet-header {
+    padding: 0 50px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.mobile--tablet__link-close {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+.mobile--tablet__close-icon {
+    font-size: 1.6rem;
+    background-color: rgb(231, 229, 229, 0.7);
+    border-radius: 50%;
+    border: 10px solid rgb(231, 229, 229, 0.7);
+}
+
+
+.menu__mobile--tablet-body {
+    padding: 0 50px 50px 50px;
+    display: flex;
+    height: calc(100vh - 70px);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu__mobile--tablet-sreach {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgb(119, 119, 119);
+    margin-bottom: 30px;
+}
+
+.menu__mobile--tablet-sreach-icon {
+    font-size: 2rem;
+    color: rgb(170, 170, 170);
+    margin-right: 20px;
+    padding: 0 10px;
+}
+
+.menu__mobile--tablet-input {
+    border: none;
+    font-size: 1.7rem;
+    color: #ccc;
+    outline: none;
+    flex: 1;
+}
+
+.menu__mobile--tablet-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 19px 0;
+}
+
+.menu__mobile--tablet-content {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #888;
+
+}
+
+.menu__mobile--tablet-main-icon {
+    font-size: 1.6rem;
+}
+
+.menu__mobile--tablet-subnav {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    border-top: 1px solid #ccc;
+}
+
+.menu__mobile--tablet-subnav-content {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #888;
+}  
+
+.menu__mobile--tablet-subnav-icon {
+    font-size: 1.9rem;
+    padding: 0 10px;
+}
+
+.menu__mobile--tablet-input {
     display: none;
+}
+
+
+.menu__mobile--tablet-input:checked ~ .menu__mobile--tablet {
+    transform: translateX(0);
+    opacity: 1;
+    transition: all linear 0.3s;
 }
 
 /* Cart */
@@ -496,7 +599,7 @@
 }
 
 
-.search-input:checked ~ .header__menu-bag-overlay, .cart-input:checked ~ .header__menu-bag-overlay {
+.search-input:checked ~ .header__menu-bag-overlay, .cart-input:checked ~ .header__menu-bag-overlay, .menu__mobile--tablet-input:checked ~  .header__menu-bag-overlay{
     display: block;
     opacity: 1;
     transition: all linear 0.3s;
@@ -1387,6 +1490,7 @@
     padding-bottom: 40px;
 }
 
+
 .footer__info-form-email-input {
     height: 54px;
     width: 238px;
@@ -1395,6 +1499,7 @@
     font-size: 1.6rem;
     border: 2px solid #000;
 }
+
 
 .footer__info-form-email-input::placeholder {
    font-size: 1.6rem;
@@ -1482,6 +1587,7 @@
 
 #backtop {
     position: fixed;
+    z-index: 1;
     width: 50px;
     height: 50px;
     background-color: rgba(255,255,255,.2);
@@ -1493,9 +1599,10 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
-#backtop:hover {
+.backtop:hover {
     border: 2px solid rgba(0, 0, 0, 1);
     transition: all linear 0.4s;
 }
