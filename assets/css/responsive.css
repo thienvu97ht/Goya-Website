@@ -32,6 +32,10 @@
         object-position: 40% 100%;
     }
 
+    .owl-dots-two {
+        display: none;
+    }
+
 }
 
 /* Tablet */
@@ -139,9 +143,6 @@
         display: none;
     }
 
-    .owl-dots-two {
-        display: none;
-    }
 
     .owl-prev-two {
         left: 2%;
@@ -149,5 +150,9 @@
 
     .owl-next-two {
         right: 2%;
+    }
+
+    .menu__mobile--tablet-content, .menu__mobile--tablet-subnav-content {
+        font-size: 1.6rem;
     }
 }
