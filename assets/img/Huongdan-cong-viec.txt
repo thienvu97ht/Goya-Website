@@ -1,0 +1,93 @@
+﻿huongtt43@fe.edu.vn
+Workshop 1:
+- Product Backlog
+- Ước lượng thời gian (dùng phương pháp bộ bài)
+- Báo cáo cuộc họp
+
+Workshop 2:
+- Product Backlog
+- Release Backlog
+- Sprint Backlog
+- Tính điểm PPS cho mỗi user story (excel)
+- Báo cáo cuộc họp - cập nhật bản excel ở workshop 1
+
+Workshop 3 & Assignment giai đoạn 1:
+- Trello: Tạo board, list (add account: huongtt@fpt.edu.vn)
+- Báo cáo cuộc họp
+- Assignment:
+	+ Product Backlog
+	+ Release Backlog
+	+ Sprint Backlog
+	+ Ước lượng thời gian (dùng phương pháp bộ bài)
+	+ Tính điểm PPS cho mỗi user story (excel)
+	+ Báo cáo cuộc họp
+	+ Slide trình bày
+
+
+Workshop 4:
+- Kế hoạch phát hành - word/Excel - bỏ
+- Bảng theo dõi tiến độ - excel
+- Vẽ biểu đồ burndown
+- Báo cáo cuộc họp
+- Cập nhật slide trình bày
+
+Workshop 5:
+- Test report
+- Defect report
+- Báo cáo cuộc họp
+- Cập nhật slide trình bày
+
+Workshop 6:
+1. Slide trình bày
+2. 1 File excel: 
+	- Product backlog, 
+	- Release backlog,
+	- Sprint backlog
+3. Mục tiêu sprint (file word), Kế hoạch phát hành
+4. 1 file excel gồm:
+	- Tính điểm PPS cho mỗi user story
+	- Bảng theo dõi tiến độ
+	- Biểu đồ burndown
+5. Test report
+6. Defect report
+
+7. Báo cáo cuộc họp
+8. Phần mềm demo
+
+
+
+3 backlog ở trên lưu trong 3 sheet của 1 file excel
+- Release backlog
+- Sprint backlog
+- Test report
+- Defect report
+
+- Slide - trình bày
+   + Trang chính
+   + Danh sách nhóm: tên, mssv, 
+               role(Product Owner, Scrum Master, 
+               Development team - Coder, Tester)
+   + Mục lục
+   + Giới thiệu dự án
+   + Product backlog
+   + Ước lượng story
+   + Quản lý thời gian còn lại
+   + Trelo và biểu đồ burndown
+
+Bảng phân chia công việc:
+ai là product owner, scrum master, development team
+Mỗi thành viên làm công việc gì????
+Phương - product owner - làm product backlog
+Hòa - development team - tester - làm test case, defect report
+.....
+
+
+
+
+
+
+
+
+
+
+
