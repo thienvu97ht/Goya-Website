@@ -1012,23 +1012,35 @@
     
 }
 
-
-
-.container__product-item:hover {
-    transform: scale(1.05);
+.product-item__wrap {
+    overflow: hidden;
 }
+
 .container__product-item {
-    width: 100%;
+    max-width: 100%;
     position: relative;
+    z-index: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 1s ease;
-    will-change: transform;
     padding-top: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+    will-change: transform;
+}
+
+.container__product-item:hover {
+    -webkit-transform:scale(1.05); /* Safari and Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* IE 9 */
+    -o-transform:scale(1.05); /* Opera */
+    transform:scale(1.05);
 }
 
 .container__product-item-color {
